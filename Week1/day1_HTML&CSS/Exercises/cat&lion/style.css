@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin-left: 5px;
+}
+
+.hed3 {
+  text-decoration: underline;
+}
+
+.hed5 {
+  text-align: center;
+}
+
+.difference {
+  border: 3px solid red;
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: outset 7px orange;
+}

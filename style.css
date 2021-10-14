@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  font-size: 30px;
+  border: 5px dashed black;
+  text-decoration: underline;
+  background-color: blueviolet;
+  padding: 10px;
+}
+
+#section {
+  width: 500px;
+}
+.flag {
+  width: 100px;
+  height: 130px;
+  display: inline-block;
+  border: 1px solid black;
+  margin: -2px;
+}
+
+.red {
+  background-color: red;
+}
+.whit {
+  background-color: white;
+}
+.blue {
+  background-color: blue;
+}
+
+.table,
+td {
+  font-size: 28px;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+th {
+  text-decoration: underline;
+}
+
+.box {
+  background-color: gray;
+  border: 2px solid black;
+  width: 20vw;
+  height: 20vh;
+}
+
+.bluebox {
+  background-color: blue;
+  border: 2px solid black;
+  width: 30%;
+  height: 40%;
+  margin: 20px;
+}
+
+.orengbox {
+  background-color: rgb(224, 101, 19);
+  border: 2px solid black;
+  width: 30%;
+  height: 40%;
+  margin: 20px;
+  position: relative;
+  bottom: 40%;
+  left: 10px;
+}

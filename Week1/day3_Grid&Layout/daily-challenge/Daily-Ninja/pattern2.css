@@ -1,0 +1,62 @@
+/* map 1 */
+
+.map {
+  display: grid;
+  grid-template-columns: repeat(16, 40px);
+  grid-template-rows: repeat(16, 40px);
+  grid-gap: 4px;
+}
+
+.orange {
+  background-color: rgb(241, 138, 4);
+}
+.red {
+  background-color: rgb(185, 99, 29);
+}
+.blue {
+  background-color: rgb(97, 29, 2);
+}
+
+/* map 2 */
+
+.map2 {
+  display: grid;
+  grid-template-columns: repeat(16, 40px);
+  grid-template-rows: repeat(16, 40px);
+  grid-gap: 4px;
+}
+/* .box {
+  border: 2px solid black;
+} */
+.greyish {
+  background-color: rgb(207, 205, 205);
+}
+.gray {
+  background-color: gray;
+}
+
+.graymor {
+  background-color: rgb(75, 74, 74);
+}
+
+.black {
+  background-color: black;
+}
+
+/* map 3 */
+.map3 {
+  display: grid;
+  grid-template-columns: repeat(16, 40px);
+  grid-template-rows: repeat(16, 40px);
+  border: 3px solid red;
+}
+.continer {
+  display: flex;
+}
+
+.red {
+  background-color: rgb(196, 49, 49);
+}
+.brightRed {
+  background-color: rgb(233, 135, 135);
+}

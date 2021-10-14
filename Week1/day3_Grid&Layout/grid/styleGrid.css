@@ -1,0 +1,22 @@
+.main {
+  border: 2px solid black;
+  height: 500px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px 20px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.pink {
+  background-color: pink;
+  grid-column: span 2;
+}

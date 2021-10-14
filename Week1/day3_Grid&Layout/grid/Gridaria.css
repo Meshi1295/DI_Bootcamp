@@ -1,0 +1,54 @@
+.gridAria {
+  display: grid;
+  gap: 10px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 100px 100px 300px 100px 100px;
+
+  grid-template-areas:
+    'header header header'
+    'hero main main'
+    'sidebar extra extra'
+    'img img posts'
+    'footer footer footer';
+}
+
+.blue {
+  grid-area: header;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+
+.purple {
+  grid-area: hero;
+  background-color: purple;
+}
+
+.yellow {
+  grid-area: main;
+  background-color: yellow;
+}
+
+.green {
+  grid-area: sidebar;
+  background-color: green;
+}
+
+.gray {
+  grid-area: extra;
+  background-color: gray;
+}
+.green2 {
+  grid-area: img;
+  background-color: greenyellow;
+}
+.pink {
+  grid-area: posts;
+  background-color: pink;
+}
+
+.orenge {
+  grid-area: footer;
+  background-color: orange;
+}

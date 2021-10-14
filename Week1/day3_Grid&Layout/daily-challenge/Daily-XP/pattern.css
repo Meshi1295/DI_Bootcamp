@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px 20px;
+}
+
+.main2 {
+  display: flex;
+  position: relative;
+  left: 220px;
+  bottom: 200px;
+}
+
+.box {
+  background-color: yellow;
+  border: 2px solid black;
+  height: 70px;
+  width: 100px;
+  margin: 3px;
+}

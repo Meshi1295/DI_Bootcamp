@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+#head {
+  margin: -17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  height: 40px;
+  margin-top: 15px;
+}
+
+i {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.img {
+  width: 100vw;
+  height: 90vh;
+  /* background-color: rgba(180, 107, 107, 0.5); */
+  background-size: cover;
+}
+
+.yuvalHead {
+  color: rgb(219, 188, 63);
+  margin-top: 20px;
+}
+
+.singin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 300px;
+  left: 50vh;
+}
+
+input {
+  margin: 7px;
+  padding: 10px;
+}
+
+.email {
+  width: 20vw;
+}
+
+p {
+  font-size: 36px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  position: relative;
+  bottom: 400px;
+  color: rgb(3, 46, 14);
+}
