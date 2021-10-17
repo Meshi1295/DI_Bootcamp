@@ -10,9 +10,12 @@ function playTheGame() {
 
          if(isNaN(userNumber)){
              alert('Sorry not a number,goodbye');
-         }else if(userNumber <= 0 || userNumber > 10){
+
+         }else if (userNumber <= 0 || userNumber > 10){
             alert('Sorry not a good number,goodbye');
-         }else if (userNumber >= 1 || userNumber <= 10){
+
+         }else if (userNumber > 1 || userNumber <= 10){
+
               test(userNumber,computerNumber)
               console.log(computerNumber)
             }
@@ -27,7 +30,7 @@ function test(userNumber,computerNumber) {
 
     for(i =0; i < 3; i++){
     if(userNumber === computerNumber){
-        alert('You Win!!!') 
+        alert('Winnnnnn!!!') 
         return;
 
     }else if(userNumber > computerNumber){
@@ -35,7 +38,7 @@ function test(userNumber,computerNumber) {
         console.log(computerNumber)
         let newNumber = parseInt(prompt('Your number is bigger then the computer’s, guess again'))
         userNumber = newNumber
-        
+
     }else if(userNumber < computerNumber){
 
         newNumber = parseInt(prompt('Your number is smaller then the computer’s, guess again'))
