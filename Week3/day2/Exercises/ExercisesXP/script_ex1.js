@@ -91,14 +91,12 @@ function generateTable (){
 
 }
 
-
-
 // 7. When you hoover on the 2nd paragraph, it should fade out (Check out “fade css animation” on Google)
-let paragraph = document.getElementsByTagName("p")[1]
-console.log(paragraph);
-    paragraph.addEventListener("mouseover",function() {
-    this.style.opacity= "0.2";
-    this.style.transition="opacity 1000ms"
+let pElement = document.getElementsByTagName("p")[1]
+
+pElement.addEventListener("mouseover",function() {
+  pElement.style.opacity= "0.4";
+  pElement.style.transition="opacity 500ms"
 })
 
 
