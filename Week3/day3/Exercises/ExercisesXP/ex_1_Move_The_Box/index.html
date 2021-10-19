@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move The Box</title>
+    <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+          margin: 20px;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        #largerBox{
+          width: 500px;
+          height: 500px;
+          position: relative;
+          background: rgb(14, 144, 219);
+          margin: 20px;
+        }
+        </style>
+</head>
+<body>
+
+    <p><button onclick="myMove()">Click Me</button></p>
+    <div id="container" class="box">
+      <div id="animate" draggable="true"></div>
+    </div>
+
+    <div id="largerBox" class="box"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
