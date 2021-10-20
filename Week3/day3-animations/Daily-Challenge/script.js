@@ -39,3 +39,27 @@ input.addEventListener('input', function (){
 //         return false;
 //             return true;
 //     }
+
+
+
+
+// DailyChallenge Input
+// HTML
+// <input type="text" id="ipt">
+// JAVASCRIPT
+// // retrieve the input
+// let input = document.getElementById('ipt')
+
+// // add an event listener of keydown
+// input.addEventListener("keydown", checkChar);
+
+// // callback function
+// function checkChar (event){
+// 	// console.log(event)
+// 	if (event.keyCode <= 90 && event.keyCode >= 65){
+// 		console.log(event.key, " is a string")
+// 	} else {
+// 		console.log(event.key, " is NOT a string")
+// 		event.preventDefault();
+// 	}
+// }
