@@ -1,0 +1,20 @@
+#mainToDo {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: rgb(189, 82, 189);
+}
+
+.btnRemove {
+  border: 1px solid black;
+}
+
+.divContainer {
+  display: inline;
+  padding: 10px;
+}
+
+#list {
+  align-items: center;
+  position: center;
+}
