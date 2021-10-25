@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.projects-container {
+  display: grid;
+  gap: 10px 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 250px);
+  margin-top: 10vh;
+
+  grid-template-areas:
+    'game website databases'
+    'game algorithm algorithm'
+    'game algorithm algorithm'
+    'exercise exercise frameworks';
+}
+.projects {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+.game {
+  grid-area: game;
+  background-color: rgba(116, 116, 225, 0.5);
+}
+
+.website {
+  grid-area: website;
+  background-color: rgba(120, 32, 161, 0.5);
+}
+
+.databases {
+  grid-area: databases;
+  background-color: yellowgreen;
+}
+
+.frameworks {
+  grid-area: frameworks;
+  background-color: rgba(238, 167, 100, 0.5);
+}
+
+.algorithm {
+  grid-area: algorithm;
+  background-color: rgba(231, 59, 59, 0.5);
+}
+.exercise {
+  grid-area: exercise;
+  background-color: rgba(230, 111, 230, 0.5);
+}
