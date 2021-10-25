@@ -39,7 +39,7 @@ console.log(newPayed);
 console.log(groceries);
 
 
-// the short way but above we have created a new object with new object()
+// the short way but above we have created a new object with - new object()
 groceriesSecond = groceries;
 
 groceries['totalPrice'] = '35$';
