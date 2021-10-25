@@ -18,9 +18,7 @@ groceries.vegetables = ["tomatoes", "cucumber", "salad"]
 groceries.totalPrice = "20$"
 
 
-
 groceries['other'] = new Object();
-
 groceries['other'].payed = true 
 groceries['other'].meansOfPayment = ["cash", "creditCard"]
 
@@ -34,10 +32,17 @@ console.log(newTotalPrice);
 
 
 // 3. Change the value of payed to false. Will we also see this modification in the copied objects ? Why ?
+// Yes because they have the same address.
 let newPayed = groceries['other'].payed = false
 
 console.log(newPayed);
 console.log(groceries);
 
 
+// the short way but above we have created a new object with new object()
+groceriesSecond = groceries;
 
+groceries['totalPrice'] = '35$';
+groceries['other']['payed'] = false;
+
+// console.log(groceriesCopy)
