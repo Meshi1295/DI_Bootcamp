@@ -26,9 +26,21 @@ let inventory = [
   }
   console.log(getCarHonda('Honda'));
 
-let found = inventory.find(e => {
-    if(e.car_make === 'Honda'){
-        console.log(`This is a ${e.car_make} ${e.car_model} from ${e.car_year}`);
 
-    } 
-})
+let found = inventory.find(e => {
+let sentence =  e.car_make === 'Honda' ? `This is a ${e.car_make} ${e.car_model} from ${e.car_year}` : null
+    
+    console.log(sentence);
+});
+
+inventory.sort((firstEl, secondEl) =>{
+    return firstEl.car_year - secondEl.car_year
+  })
+  console.log(inventory);
+
+
+    
+    
+    
+
+    
