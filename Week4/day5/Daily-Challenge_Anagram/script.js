@@ -8,4 +8,4 @@ function anagram(word1, word2){
     return word1.split("").sort().join("") === word2.split("").sort().join("");
   }
 
-  console.log(anagram('meshi','mshei'));
+  console.log(anagram('meshi','mshei')); // true
