@@ -1,0 +1,72 @@
+@import url('http://fonts.cdnfonts.com/css/sega-logo-font');
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(p_1.png);
+}
+
+#section-container {
+  box-shadow: 10px 5px 5px rgb(102, 140, 223);
+  border: 2px solid black;
+  background-color: rgb(9, 74, 77);
+}
+
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 10px 5px 5px rgb(64, 150, 165);
+  border-radius: 10px;
+  width: auto;
+  height: 30vh;
+  margin: 16px;
+  padding: 10px;
+  background-color: rgb(119, 178, 181);
+}
+
+.card h2 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20%;
+}
+
+.card img {
+  background-color: rgb(4, 33, 60);
+  height: 50%;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-top: 10%;
+  width: 100%;
+  height: 17vh;
+  background-image: url(p_2.png);
+}
+
+.card p {
+  font-size: 10px;
+  margin-top: 10%;
+}
+
+#hed-container {
+  display: flex;
+
+  padding: 20px;
+  background-color: rgb(214, 123, 57);
+}
+
+#robots {
+  font-size: 25px;
+  font-family: 'SEGA LOGO FONT', sans-serif;
+  margin-left: auto;
+}
+
+.hidden {
+  display: none;
+}

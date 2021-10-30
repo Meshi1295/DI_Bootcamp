@@ -33,6 +33,10 @@ let sentence =  e.car_make === 'Honda' ? `This is a ${e.car_make} ${e.car_model}
     console.log(sentence);
 });
 
+
+
+
+// part 2 
 inventory.sort((firstEl, secondEl) =>{
     return firstEl.car_year - secondEl.car_year
   })
