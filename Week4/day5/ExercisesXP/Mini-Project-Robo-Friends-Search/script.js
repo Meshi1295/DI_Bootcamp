@@ -115,11 +115,11 @@ function displayRobot(event) {
   event.preventDefault();
 
   robots.filter((e) => !e.name.toLowerCase().includes(event.target.value.toLowerCase()))
-        .forEach((e) => document.getElementById(e.id).classList.add("hidden"));
+        .forEach((e) => document.getElementById(e.id).classList.add("hide"));
 
 
 robots.filter((e) => e.name.toLowerCase().includes(event.target.value.toLowerCase()))
-      .forEach((e) => document.getElementById(e.id).classList.remove("hidden"))
+      .forEach((e) => document.getElementById(e.id).classList.remove("hide"))
 
 }
      
