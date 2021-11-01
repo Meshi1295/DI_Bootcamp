@@ -1,8 +1,5 @@
-// 
-
 const searchInput = document.querySelector("#searchInput");
 const submit = document.querySelector("#submit");
-
 
 
 const getImages = (e) => {
@@ -24,21 +21,26 @@ const getImages = (e) => {
 submit.addEventListener("click",getImages);
 
 
-
 const creatDiv = (imgUrl) => {
 	
 	let images = document.querySelector("#images")
 	let div = document.createElement("div");
 	let img = document.createElement("img");
+    let deleteImg = document.createElement("button")
+    deleteImg.textContent = "Delete"
+
 	img.setAttribute("src",imgUrl);
 	div.appendChild(img);
 
 
 	images.appendChild(div);
+    div.appendChild(deleteImg)
+
+    deleteImg.addEventListener('click', function(e){
+        // console.log(e.target.parentNode);
+
+        let parentDiv = e.target.parentNode
+        parentDiv.remove()
+    })
+
 }
-
-
-
-
-
-
