@@ -24,9 +24,12 @@ function sumDB (parameter){
     })
 }
 
-sumDB ("meshi")
+sumDB ("mesh")
 .then((value)=> console.log(value.repeat(2)))
-.catch((err)=>console.log(err))
+.catch((err)=> console.log(err))
 .finally(function(){
     console.log('congratulation');
 })
+
+
+
