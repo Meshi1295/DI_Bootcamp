@@ -5,8 +5,6 @@ makeAllCaps = (arr) => {
   };
   
   sortWords = (array) => {return array.sort()};
-  
-  //testing
   Promise.resolve(["strawberries", "bananas", "chocolate"])
     .then(makeAllCaps)
     .then(sortWords)
