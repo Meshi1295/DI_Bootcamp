@@ -27,7 +27,7 @@ async function getData(){
     if(data.status !== 200){
         renderData(data);
     } else {
-        throw new Error('err in url')
+        throw new Error('Oh No! That person isnt available.')
     }
 }
 

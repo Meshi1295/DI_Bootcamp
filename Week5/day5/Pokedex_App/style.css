@@ -1,0 +1,30 @@
+body {
+  margin-top: 70px;
+}
+
+#imgs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  padding: 10px;
+}
+
+#green {
+  background-color: transparent;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+}
+
+#gray-btns {
+}
+
+.btn {
+  background-color: transparent;
+  width: 40px;
+  margin: 7px;
+}
