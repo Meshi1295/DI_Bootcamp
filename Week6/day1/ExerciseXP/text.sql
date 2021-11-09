@@ -14,16 +14,20 @@
 
 -- Exercise 1 : Items And Customers------
 
--- CREATE TABLE items (
--- 	small_desk MONEY,
--- 	large_desk SMALLINT NOT NULL,
--- 	fan SMALLINT NOT NULL
--- )
+-- CREATE TABLE items( 
+-- 	item VARCHAR(50) NOT NULL,  
+-- 	price REAL NOT NULL );
+	
 
 -- SELECT * FROM items;
 
--- INSERT INTO items (small_desk, large_desk, fan)
--- VALUES (100,300,80) ;
+-- INSERT INTO items(item,price)
+-- VALUES('Small Desk',100)
+
+-- INSERT INTO items(item,price)
+-- VALUES('Large desk',300); 
+
+-- INSERT INTO items(item,price)VALUES('Fan',80);
 
 
 -- 	CREATE TABLE customers (
@@ -45,10 +49,11 @@
 -- SELECT * FROM items;
 
 -- All the items with a price above 80 (80 not included).
--- SELECT small_desk FROM items WHERE > 80 ;
+-- SELECT item FROM items WHERE price > 80;
 
 -- All the items with a price below 300. (300 included)
--- SELECT small_desk FROM items WHERE =< 300 ;
+-- SELECT item FROM items WHERE price <= 300;
+
 
 -- All customers whose last name is ‘Smith’ (What will be your outcome?).
 -- No result will appear because there is no one whose last name is Smith

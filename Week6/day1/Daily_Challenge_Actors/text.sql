@@ -12,7 +12,7 @@
 --     CONNECTION LIMIT = -1;
 
 -- 1. Count how many actors are in the table.
-SELECT * FROM actors
+-- SELECT * FROM actors
 -- SELECT COUNT(*) FROM actors;
 
 -- CREATE INTO actors (first_name, last_name, age, number_oscar)
