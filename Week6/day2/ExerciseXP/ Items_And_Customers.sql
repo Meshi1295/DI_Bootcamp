@@ -14,14 +14,13 @@
 -- -- -- -- -- -- 1
 --  1. All items, ordered by price (lowest to highest).
 
--- SELECT * FROM items ORDER BY small_desk DESC ;
+-- SELECT item,price FROM items ORDER BY price ASC ;
 
 -- 2. Items with a price above 80 (80 included), ordered by price (highest to lowest).
--- SELECT * FROM items ORDER BY small_desk, large_desk, fan >= 80 ASC ;
+-- SELECT * FROM items WHERE price >= 80 ORDER BY price DESC ;
+
 
 --3. The first 3 customers in alphabetical order (A-Z) – exclude ‘id’ from the results.
--- SELECT * FROM customers;
-
 -- SELECT * FROM customers ORDER BY first_name ASC LIMIT 3;
 
 -- 4. All last names (no other columns!), in reverse alphabetical order (Z-A)
@@ -48,12 +47,49 @@
 
 -- -- -- -- -- -- 3
 --  1. All purchases. Is this information useful to us? NO
+
 -- 2. All purchases, joining with the customers table.
 
 -- SELECT first_name,last_name,item_id 
 -- FROM purchases 
 -- INNER JOIN customers 
--- ON customers.id = customer_id
+-- ON customers.id_customer = customer_id
+
+-- 3. Purchases of the customer with the ID equal to 4.
+-- SELECT first_name,last_name,item_id, customers.id_customer FROM purchases
+-- INNER JOIN customers 
+-- ON customers.id_customer = customer_id 
+-- WHERE customer_id > 4
+
+-- .4 Purchases for a large desk AND a small desk
+--  SELECT first_name,last_name, item FROM purchases 
+-- INNER JOIN customers 
+-- ON customers.id_customer = customer_id 
+-- INNER JOIN items 
+-- ON items.id = item_id WHERE item = 'Large Desk' or item = 'Small Desk'
+
+
+------------------------ 4
+-- Create a purchase for Scott Scott – he bought a hard drive.
+-- INSERT INTO items (item, price) VALUES ('Hard Drive','100') RETURNING *;
+-- INSERT INTO purchases (customer_id, item_id) VALUES(3,4);
+
+
+
+---------------------------5 
+
+-- Use SQL to show all the customers who have made a purchase. Show the following fields/columns:
+-- 1. Customer first name
+-- 2. Customer last name
+-- 3. Item name
+
+-- SELECT first_name,last_name,item FROM customers 
+-- INNER JOIN purchases 
+-- ON customers.id_customer = customer_id 
+-- INNER JOIN items 
+-- ON items.id_items = item_id
+
+
 
 
 
