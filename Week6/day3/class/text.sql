@@ -103,5 +103,34 @@
 
 
 
+----------- ON DELETE CASCADE/ ON DELETE RESTRICT
+
+-- CREATE TABLE colors(
+-- 	color_id SERIAL PRIMARY KEY,
+-- 	color_name VARCHAR (20) 
+-- );
+
+-- INSERT INTO colors(color_name)VALUES('red'),('blue'),('yellow')
+-- SELECT * FROM colors;
+
+--  CREATE TABLE cars(
+-- car_id SERIAL PRIMARY KEY,
+-- car_color INTEGER REFERENCES colors (color_id) ON DELETE CASCADE/ ON DELETE RESTRICT,
+-- car_name TEXT
+-- );
+
+-- SELECT * FROM cars;
+
+-- INSERT INTO cars (car_color,car_name)
+-- VALUES(1,'mazda'),(2,'voolvo'),(3, 'reno')
+
+-- DELETE FROM colors where color_name = 'red';
+--  DROP TABLE cars;
+
+
+
+
+
+
 
 
