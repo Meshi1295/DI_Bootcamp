@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Special To Do List</h1>
+    <section id="container" class="container">
+        <label id="name" class="name">Name task</label>
+        <input type="text" placeholder='New Task'>
+
+        <label id="description" class="description">Description</label>
+        <input type="text">
+
+        <label id="start" class="start" for="startLabel">Start date and time</label>
+        <input type="date" id="startLabel" >
+        <input type="time" id="startLabel" >
+
+        <label id="end" class="end" for="endLabel">End date and time</label>
+        <input type="date" id="endLabel" >
+        <input type="time" id="endLabel" >
+
+        <div id="status">Status</div>
+        <button id="add">ADD Task</button>
+        
+    </section>
+
+    <div id="list"></div>
+    <button>Clear All Your Task</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
