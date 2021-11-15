@@ -1,3 +1,4 @@
+// Exercise 1 : Hello Node.Js
 const yourAge = async() => {
     let a = 5;
     let b = 10;
@@ -11,7 +12,7 @@ const yourAge = async() => {
     }
 } 
 
-
+// Exercise 2 : Hello Node.Js #2
 const sentence = async() => {
     try{
         let sen = "'Hi, thanks for running me with npm start!'"
@@ -21,12 +22,26 @@ const sentence = async() => {
     }
 }
 
+// Exercise 3 : Nodemon
 
-let a = 5;
-let b = 10;
-let x;
-let c = 6;
-x = a + b;
+
+
+const nodemon = async() => {
+    let a = 5;
+    let b = 10;
+    let x;
+    let c = 6;
+    x = a + b;
+
+    try {
+        let sum = a + b
+        return sum
+    }catch (e) {
+        console.log(e)
+    } finally {
+        return x + c
+    }
+}
 
 
 
@@ -34,5 +49,6 @@ x = a + b;
 
 module.exports = {
     age : yourAge,
-    sentence
+    sentence,
+   mon : nodemon
 }
