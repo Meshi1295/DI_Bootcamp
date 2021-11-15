@@ -14,15 +14,21 @@ num.number()
 // Part II:
 
 
-http.createServer((req,res)=>{
-console.log(num.number);
-    res.end(
-        `<p>My Module is:</p>
-        <p>${newNum}</p>
-        <h1>Hi there at the frontend</h1>`
-      );
+// http.createServer((req,res)=>{
+// console.log(num.number);
+//     res.end(
+//         `<p>My Module is:</p>
+//         <p>${newNum}</p>
+//         <h1>Hi there at the frontend</h1>`
+//       );
 
-}).listen(3000,()=>{
-    console.log('listening to port 3000');
-})
+// }).listen(3000,()=>{
+//     console.log('listening to port 3000');
+// })
 
+// Part III
+http.createServer((req, res) => {
+    res.writeHead(200);
+    res.end(`<h1>The date and the time are : ${num.time()}</h1>`);
+  })
+  .listen(8080);
