@@ -8,21 +8,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Special To Do List</h1>
+
+    <form id="form" class="form">
+        <h1>Special To Do List</h1>
+
+        <input id="newTask" type="text" class="newTask" placeholder='Enter Your Todo' autocomplete="off">
+
+        <label for="descriptionLabel" id="descriptionLabel" class="description">Description</label>
+        <textarea name="descriptionLabel" class="description" id="description" cols="30" rows="10"></textarea>
+
+        <label id="start" class="start" for="startLabel"><b>Start date and time</b></label>
+        <input type="date" class="date" id="startDate"  placeholder="Date">
+        <input type="time" class="time" id="startTime" placeholder="Time" >
+
+
+        <label id="end" class="end" for="endLabel"><b>End date and time</b></label>
+        <input type="date" class="date" id="endDate" >
+        <input type="time" class="time" id="endTime" >
+
+        <div id="status">Status</div>
+        <button id="add">ADD Task</button>
+
+    </form>
+  
+
+
+    <section class="list">
+        <ul class="todo" id="todos"></ul>
+
+        <small>Left click to toggle completed. <br> 
+            Right click to delete todo</small>
+    </section>
+
+
+
+
+
+
+
+
+<!--     
     <section id="container" class="container">
+        <h1>Special To Do List</h1>
         <label id="name" class="name">Name task</label>
-        <input type="text" placeholder='New Task'>
+        <input id="newTask" type="text" class="name" placeholder='New Task'>
 
-        <label id="description" class="description">Description</label>
-        <input type="text">
+        <label id="descriptionLabel" class="description">Description</label>
+        <textarea name="" class="description" id="description" cols="30" rows="10"></textarea>
 
-        <label id="start" class="start" for="startLabel">Start date and time</label>
-        <input type="date" id="startLabel" >
-        <input type="time" id="startLabel" >
+        <label id="start" class="start" for="startLabel"><b>Start date and time</b></label>
+        <input type="date" class="date" id="startLabel" >
+        <input type="time" class="time" id="startLabel" >
 
-        <label id="end" class="end" for="endLabel">End date and time</label>
-        <input type="date" id="endLabel" >
-        <input type="time" id="endLabel" >
+        <label id="end" class="end" for="endLabel"><b>End date and time</b></label>
+        <input type="date" class="date" id="endLabel" >
+        <input type="time" class="time" id="endLabel" >
 
         <div id="status">Status</div>
         <button id="add">ADD Task</button>
@@ -30,7 +70,7 @@
     </section>
 
     <div id="list"></div>
-    <button>Clear All Your Task</button>
+    <button class="clear" id="clear">Clear All Your Task</button> -->
 
     <script src="script.js"></script>
 </body>

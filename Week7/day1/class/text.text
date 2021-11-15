@@ -1,0 +1,9 @@
+building model:
+https
+fs
+global
+process
+
+model.exports => object , model 
+
+nodemon => 
