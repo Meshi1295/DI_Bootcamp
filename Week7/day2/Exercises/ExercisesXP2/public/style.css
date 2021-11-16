@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+}
+h1 {
+  border: 2px dashed rgb(74, 74, 135);
+  color: rgb(221, 130, 130);
+}
+
+button {
+  color: rgb(214, 212, 57);
+}
