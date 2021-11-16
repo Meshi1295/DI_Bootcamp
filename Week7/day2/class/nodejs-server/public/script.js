@@ -11,7 +11,7 @@ function getRobots(){
 
 function showUsers(arr) {
   const root = document.getElementById('root');
-  arr.forEach((item, i) => {
+  arr.forEach((item) => {
     const div = document.createElement('div');
     div.innerText = item.name;
     root.appendChild(div);
