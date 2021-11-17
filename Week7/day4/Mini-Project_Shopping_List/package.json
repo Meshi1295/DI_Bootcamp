@@ -1,8 +1,8 @@
 {
-  "name": "day3",
+  "name": "mini-project_rss_facts_feed_ejs",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -14,9 +14,8 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "knex": "^0.95.14",
-    "pg": "^8.7.1"
+    "express": "^4.17.1"
   }
 }

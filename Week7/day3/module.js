@@ -1,4 +1,7 @@
 const knex = require('knex');
+const env = require('dotenv');
+
+env.config({path:'./.env'});
 
 const db = knex({
     client: 'pg',
@@ -26,8 +29,6 @@ return db('country')
 )
 .returning('*')
 }
-
-
  module.exports = {
     allCountries,
     insertCountry

@@ -6,16 +6,18 @@
 // .post('/api/countries) -> update table
 
 
-const exp = require('express')
+const exp = require('express');
+// const env = require('dotenv');
 const moduleDb = require('./module.js')
 
 const app = exp()
+// env.config();
 
 app.listen(3000, () => {
     console.log('listen to port 3000')
-})
+    })
 
-app.use('/' , exp.static((__dirname)));
+app.use('/' , exp.static(__dirname + '/public'));
 
 
 app.get('/api/countries', (req,res) => {
@@ -25,17 +27,10 @@ app.get('/api/countries', (req,res) => {
 })
 
 app.put('/api/countries/:countryName', (req,res) => {
-    
     moduleDb.insertCountry(req.params.countryName)
     .then(data => res.json(data))
     .catch(e => console.log(e))
 })
-
-
-
-
-
-
 
 
 
