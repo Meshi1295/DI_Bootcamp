@@ -1,7 +1,7 @@
  function sendData(){
      const item = document.getElementById('item').value;
      const amount = document.getElementById('amount').value;
-    //  const row =  item + ':' + amount;
+  
     let listData = {
         item,
         amount

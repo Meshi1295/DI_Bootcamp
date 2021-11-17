@@ -1,15 +1,15 @@
 const exp = require('express');
 const env = require('dotenv');
-// const db = require('./modules/db.js')
 const bp = require('body-parser');
 const fs = require('fs');
+const cors = require('cors')
 
 const app = exp();
 env.config();
+app.use(cors());
 
 app.use(bp.urlencoded({extended:false}));
 app.use(bp.json());
-
 
 app.use('/', exp.static(__dirname + '/public'))
 
@@ -34,9 +34,7 @@ app.post('/data', (req,res) => {
     })
     res.send({message:'OK'})
   })
-    // db.insertToList(item)   
-    
-
+   
 
 app.get('/show', (req,res)=> {
     let showList = [];
@@ -53,5 +51,3 @@ app.get('/show', (req,res)=> {
 app.listen(process.env.PORT, ()=>{
     console.log(`listen to port ${process.env.PORT}`);
 })
-
-
