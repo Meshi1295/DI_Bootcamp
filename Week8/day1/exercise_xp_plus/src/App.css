@@ -1,0 +1,9 @@
+.container {
+  text-align: center;
+}
+
+.container header {
+  color: red;
+  font-size: 25px;
+  background-color: lightblue;
+}
