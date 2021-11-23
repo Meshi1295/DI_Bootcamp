@@ -16,8 +16,7 @@ componentDidMount(){
     .catch(e => console.log(e))
 }
 
-  allCities = (e) =>{
-      console.log();
+  allCities = (e) => {
       fetch(`http://localhost:9000/cities/${e.target.value}`)
       .then(city=> city.json())
       .then(data => this.setState({citiesArr:data}))
