@@ -1,0 +1,13 @@
+.lang {
+  display: flex;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: auto;
+  background-color: blanchedalmond;
+}
+
+.lang p {
+  padding: 6px;
+}
