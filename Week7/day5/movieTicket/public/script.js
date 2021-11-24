@@ -1,4 +1,4 @@
-// let dot = require('dotenv')
+// const dot = require('dotenv')
 // dot.config({ path: '../.env' })
 // const db = require('../module')
 
@@ -27,7 +27,6 @@ async function getMovies(url){
 
 function showMovies(movies){
     main.innerHTML ='';
-// "https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1154&q=80"
 
     movies.forEach(movie => {
         const {poster_path, vote_average, overview, title, id} = movie
@@ -41,25 +40,22 @@ function showMovies(movies){
            <span class="${getClassRating(vote_average)}">${vote_average}</span>
        </div>
        <div class="overview">
-           <h3>Overview</h3>
-          <input type="submit" value="Order" onclick="passId(${id})">
+           <h3>Overview</h3> 
+           <input type="submit" class="orderBtn" value="Order" onclick="passId()"><br>
            ${overview}
        </div>
        `
-
        main.appendChild(movieEl)
     });
 }
 
-async function passId(id){
-  let url =  window.location.href = `order_and_seats.html`;
 
-//   const res = await fetch(url);
-//   const data = await res.json();
-//   console.log(data);
+ function passId(e){
+    //  let movieId = e.target.movie.id
+    //  movieId.setAttribute('selected')
+    //  console.log(movieId);
+    window.location = `order_and_seats.html`;
 }
-
-
 
 function getClassRating(vote){
     if(vote >= 8){
@@ -71,13 +67,6 @@ function getClassRating(vote){
     }
 
 }
-
-// function getOrder(id){
-//     if(id){
-      
-//     }
-
-// }
 
 form.addEventListener('submit', (e)=> {
     e.preventDefault();

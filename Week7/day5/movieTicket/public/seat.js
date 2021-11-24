@@ -24,12 +24,13 @@ async function getMovies(url){
 };
 
   function getOneMovie(data){
-console.log(data);
+
  data.forEach((item)=> {
        let movie =  item;
       let price = movie.popularity / 26
       let optionEl = document.createElement('option');
       optionEl.setAttribute('value',price)
+      optionEl.setAttribute('id',movie.id)
       optionEl.innerText = `${movie.title}($${price.toFixed()})`
       movieSelect.appendChild(optionEl)
 
@@ -52,14 +53,12 @@ but.addEventListener('click', function (e){
     }
 )
 
-function addOrder(){
 
-}
 
 populateUI();
 
 let ticketPrice = +movieSelect.value;
-console.log(ticketPrice);
+
 // let ticketPrice = process.env.API_VRL
 // console.log(ticketPrice);
 

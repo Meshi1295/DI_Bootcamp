@@ -7,17 +7,10 @@ env.config();
 
 app.use('/home', express.static((__dirname + '/public')))
 
-app.get('/order_seats', (req,res) => {
+app.get('/order_seats/:id', (req,res) => {
      let id = req.params 
      console.log(id);   
   
- 
-//   .then(row => {
-//     res.json(row)
-//   })
-//   .catch(e => {
-//     console.log(e);
-//   })
 
 })
 
