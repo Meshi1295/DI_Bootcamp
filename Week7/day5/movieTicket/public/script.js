@@ -41,20 +41,19 @@ function showMovies(movies){
        </div>
        <div class="overview">
            <h3>Overview</h3> 
-           <input type="submit" class="orderBtn" value="Order" onclick="passId()"><br>
+           <input type="submit" class="orderBtn" value="Order" onclick="passId(${id})"><br>
            ${overview}
        </div>
        `
        main.appendChild(movieEl)
+       console.log(id);
     });
 }
 
 
- function passId(e){
-    //  let movieId = e.target.movie.id
-    //  movieId.setAttribute('selected')
-    //  console.log(movieId);
-    window.location = `order_and_seats.html`;
+ function passId(id){
+
+    window.location = `order_and_seats.html?id=${id}`;
 }
 
 function getClassRating(vote){
@@ -65,7 +64,6 @@ function getClassRating(vote){
     } else {
         return 'red'
     }
-
 }
 
 form.addEventListener('submit', (e)=> {

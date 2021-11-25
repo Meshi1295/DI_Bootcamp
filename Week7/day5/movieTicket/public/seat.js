@@ -10,20 +10,23 @@ API_VRL="https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api
 IMG_PATH='https://image.tmdb.org/t/p/w1280'
 
 SEARCH_URL='https://api.themoviedb.org/3/search/movie?api_key=86de29d13f3d0460561191a74e5cf12f&query="'
-// const env = require('dotenv')
-// env.config();
+
 
 getMovies(API_VRL)
 
 async function getMovies(url){
     const res = await fetch(url);
     const data = await res.json();
-    // const data = await res.data
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const id = urlParams.get('id')
+    console.log("seat",id);
+
     
-    getOneMovie(data.results)
+    getOneMovie(data.results, id)
 };
 
-  function getOneMovie(data){
+  function getOneMovie(data, id){
 
  data.forEach((item)=> {
        let movie =  item;
@@ -32,11 +35,13 @@ async function getMovies(url){
       optionEl.setAttribute('value',price)
       optionEl.setAttribute('id',movie.id)
       optionEl.innerText = `${movie.title}($${price.toFixed()})`
+      if(movie.id == id){
+        optionEl.setAttribute('selected',true)
+      }
       movieSelect.appendChild(optionEl)
 
    })
 }
-
 
 // console.log(data);
 const but = document.getElementById('but')
