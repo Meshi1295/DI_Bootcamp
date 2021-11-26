@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.container h1 {
+  font-size: 26px;
+  background: black;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+
+.formContainer {
+  background-color: burlywood;
+  margin: auto;
+}
+
+.sumText {
+  margin: 5px;
+}
+
+.gender {
+  margin: 7px;
+}
+
+.submit {
+  padding: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.sectionContainer {
+  background: rgb(0, 90, 90);
+}
+
+.sectionContainer h2 {
+  margin: 0;
+}
+
+.sectionContainer > * {
+  color: #fff;
+  margin: 7px;
+  padding: 5px;
+}
