@@ -29,7 +29,6 @@ class App extends React.Component {
     else {
       this.setState({[name] : value})
     }
-   
   }
 
   render(){
