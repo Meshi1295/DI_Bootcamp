@@ -1,0 +1,5 @@
+1. Redux folder - actions, reducers
+2. 2 reducer - first for property_one, second for property_two
+3. combine reducers - {combineReducers} from redux
+4. use logger middleware - npm i redux-logger
+5. import {createStore, applyMiddleware} from redux
