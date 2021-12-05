@@ -12,9 +12,10 @@ const initState = {
     console.log(action);
     if(action.type === 'DELETE_POST'){
      let newPosts = state.posts.filter(post => {
-      return post.id !== action.payload.id
+       console.log('post',post);
+      return post.id !== action.payload
      });
-     return { ...state,posts: newPosts}
+     return { posts: newPosts}
     }
     return state;
   }
