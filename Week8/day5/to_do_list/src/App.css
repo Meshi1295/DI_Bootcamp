@@ -1,0 +1,4 @@
+.collection-item span:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+}
