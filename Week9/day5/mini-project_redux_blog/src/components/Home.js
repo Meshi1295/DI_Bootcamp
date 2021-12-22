@@ -5,10 +5,10 @@ import { connect } from 'react-redux'
 import '../style.css'
 
 class Home extends Component {
-  render(){
+  render() {
     console.log(this.props);
     const { posts } = this.props
-    
+
     const postList = posts.length ? (
       posts.map(post => {
         return (
